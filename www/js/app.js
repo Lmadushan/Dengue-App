@@ -5,12 +5,6 @@ Framework7.use(Framework7Vue);
 Vue.component('page-about', {
   template: '#page-about'
 });
-Vue.component('page-form', {
-  template: '#page-form'
-});
-Vue.component('page-dynamic-routing', {
-  template: '#page-dynamic-routing'
-});
 Vue.component('page-not-found', {
   template: '#page-not-found'
 });
@@ -32,18 +26,10 @@ new Vue({
             path: '/about/',
             component: 'page-about'
           },
-          {
-            path: '/form/',
-            component: 'page-form'
-          },
-          {
-            path: '/dynamic-route/blog/:blogId/post/:postId/',
-            component: 'page-dynamic-routing'
-          },
-          {
-            path: '(.*)',
+          /*{
+            path: '(!*)',
             component: 'page-not-found',
-          },
+          },*/
         ],
       }
     }
