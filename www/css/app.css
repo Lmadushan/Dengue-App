@@ -1,1 +1,4 @@
-/* Your app styles here */
+body {
+   background-image: url("Dengue-App/www/img/mosqu.png");
+   background-color: #cccccc;
+}
