@@ -5,6 +5,15 @@ Framework7.use(Framework7Vue);
 Vue.component('page-about', {
   template: '#page-about'
 });
+Vue.component('page-signup', {
+  template: '#page-signup'
+});
+Vue.component('page-login', {
+  template: '#page-login'
+});
+Vue.component('page-prevent', {
+  template: '#page-prevent'
+});
 Vue.component('page-not-found', {
   template: '#page-not-found'
 });
@@ -26,10 +35,22 @@ new Vue({
             path: '/about/',
             component: 'page-about'
           },
-          /*{
-            path: '(!*)',
+          {
+            path: '/signup/',
+            component: 'page-signup'
+          },
+          {
+            path: '/login/',
+            component: 'page-login'
+          },
+          {
+            path: '/prevent/',
+            component: 'page-prevent'
+          },
+          {
+            path: '(.*)',
             component: 'page-not-found',
-          },*/
+          },
         ],
       }
     }
